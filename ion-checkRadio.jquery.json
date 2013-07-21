@@ -1,0 +1,32 @@
+﻿{
+    "name": "ion-checkRadio",
+    "version": "1.0.0",
+    "title": "Ion.Check Radio",
+    "description": "jQuery plugin for styling checkboxes and radio-buttons. With skin support.",
+    "keywords": [
+        "forms",
+        "checkbox",
+        "radio",
+        "interface",
+        "skins",
+        "ui"
+    ],
+    "author": {
+        "name": "IonDen",
+        "url": "https://github.com/IonDen",
+        "email": "denis.ineshin@gmail.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://ionden.com/a/plugins/licence-en.html"
+        }
+    ],
+    "homepage": "https://github.com/IonDen/ion.checkRadio",
+    "docs": "https://github.com/IonDen/ion.checkRadio/blob/master/readme.md",
+    "demo": "http://ionden.com/a/plugins/ion.checkRadio/en.html",
+    "download": "http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.0.0.zip",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}

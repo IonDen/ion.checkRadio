@@ -12,8 +12,8 @@ Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.0
 * Ion.CheckRadio — nice and easy jQuery-plugin for checkbox and radio-buttons customization.
 * With skin support
 * Crossbrowser: Google Chrome, Mozilla Firefox, Opera, Safari, IE(8.0+)
-* Ion.Image Slider supports touch-devices (iPhone, iPad, etc.).
-* Ion.Image Slider freely distributed under terms of <a href="http://ionden.com/a/plugins/licence-en.html" target="_blank">MIT licence</a>.
+* Ion.CheckRadio supports touch-devices (iPhone, iPad, etc.).
+* Ion.CheckRadio freely distributed under terms of <a href="http://ionden.com/a/plugins/licence-en.html" target="_blank">MIT licence</a>.
 
 ## Dependencies
 * <a href="http://jquery.com/" target="_blank">jQuery 1.9+</a>

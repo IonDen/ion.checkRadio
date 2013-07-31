@@ -1,10 +1,10 @@
-# Ion.CheckRadio 1.0.0
+# Ion.CheckRadio 1.0.1
 
 > English description | <a href="readme.ru.md">Описание на русском</a>
 
 jQuery plugin for styling checkboxes and radio-buttons. With skin support. <a href="http://ionden.com/a/plugins/ion.checkRadio/en.html">Project page and demos</a>
 
-Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.0.0.zip">ion.checkRadio-1.0.0.zip</a>
+Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.0.1.zip">ion.checkRadio-1.0.1.zip</a>
 
 ***
 
@@ -67,4 +67,5 @@ Success!
 
 
 ## Update history
+* July 31, 2013 - minor enhancement
 * July 21, 2013 - release

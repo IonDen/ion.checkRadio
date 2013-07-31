@@ -1,5 +1,5 @@
 ﻿// Ion.CheckRadio
-// version 1.0.0, build: 14
+// version 1.0.1 Build: 18
 // © 2013 Denis Ineshin | IonDen.com
 //
 // Project page:    http://ionden.com/a/plugins/ion.CheckRadio/en.html
@@ -25,6 +25,7 @@
                     name,
                     html,
                     text,
+                    tempText,
 
                     self = this;
 
@@ -55,12 +56,14 @@
                     $label = $input.parent("label");
 
                     if($label.length > 0) {
-                        text = $label.text().trim();
+                        text = $label.html();
+                        tempText = text.replace(/<input["=a-zA-Z\u0400-\u04FF\s\d]+>{1}/,"");
+                        text = tempText.trim();
                     } else {
                         id = $input.prop("id");
                         $label = $("label[for='"+id+"']");
                         if($label.length > 0) {
-                            text = $label.text().trim();
+                            text = $label.html().trim();
                         } else {
                             throw new Error("Label not found!");
                         }

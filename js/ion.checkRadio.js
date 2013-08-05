@@ -1,5 +1,5 @@
 ﻿// Ion.CheckRadio
-// version 1.0.1 Build: 18
+// version 1.0.2 Build: 19
 // © 2013 Denis Ineshin | IonDen.com
 //
 // Project page:    http://ionden.com/a/plugins/ion.CheckRadio/en.html
@@ -57,7 +57,7 @@
 
                     if($label.length > 0) {
                         text = $label.html();
-                        tempText = text.replace(/<input["=a-zA-Z\u0400-\u04FF\s\d]+>{1}/,"");
+                        tempText = text.replace(/<input["-=a-zA-Z\u0400-\u04FF\s\d]+>{1}/,"");
                         text = tempText.trim();
                     } else {
                         id = $input.prop("id");
@@ -126,12 +126,12 @@
                 };
 
                 var checkOn = function(){
-                    $input.prop("checked", true);
+                    $input.prop("checked", true).trigger("change");
                     $("input[name='"+name+"']").trigger("stateChanged");
                 };
 
                 var checkOff = function(){
-                    $input.prop("checked", false);
+                    $input.prop("checked", false).trigger("change");
                     $("input[name='"+name+"']").trigger("stateChanged");
                 };
 

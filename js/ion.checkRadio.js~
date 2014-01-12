@@ -57,7 +57,7 @@
 
                     if($label.length > 0) {
                         text = $label.html();
-                        tempText = text.replace(/<input["-=a-zA-Z\u0400-\u04FF\s\d]+>{1}\[\]\-/,"");
+                        tempText = text.replace(/<input["-=a-zA-Z\u0400-\u04FF\s\d]+>{1}/,"");
                         text = tempText.trim();
                     } else {
                         id = $input.prop("id");

@@ -107,7 +107,7 @@
                 var bindEvents = function(){
                     $elem.on("click", function(){
                         if(!disabled) {
-                            if(checked) {
+                            if(checked && type !== 'radio') {
                                 checkOff();
                             } else {
                                 checkOn();

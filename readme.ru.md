@@ -1,10 +1,10 @@
-# Ion.CheckRadio 1.0.2
+# Ion.CheckRadio 1.1.0
 
 > <a href="readme.md">English description</a> | Описание на русском
 
 jQuery плагин для стилизации чекбоксов и радио-батонов. С поддержкой скинов <a href="http://ionden.com/a/plugins/ion.checkRadio/index.html">Сайт проекта и демо</a>
 
-Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.0.2.zip">ion.checkRadio-1.0.2.zip</a>
+Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.1.0.zip">ion.checkRadio-1.1.0.zip</a>
 
 ***
 
@@ -68,6 +68,7 @@ Profit!
 
 
 ## История обновлений
+* 30.04.2014 - Множество мелких исправлений, в том числе: #1, #5, #7
 * 05.08.2013 - исправлен мелкий баг с событием onChange
 * 31.07.2013 - исправлен мелкий недочет
 * 21.07.2013 - релиз

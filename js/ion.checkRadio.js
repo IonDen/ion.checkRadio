@@ -1,6 +1,6 @@
 ﻿// Ion.CheckRadio
-// version 1.0.2 Build: 19
-// © 2013 Denis Ineshin | IonDen.com
+// version 1.1.0 Build: 23
+// © 2014 Denis Ineshin | IonDen.com
 //
 // Project page:    http://ionden.com/a/plugins/ion.CheckRadio/en.html
 // GitHub page:     https://github.com/IonDen/ion.CheckRadio
@@ -9,14 +9,23 @@
 // http://ionden.com/a/plugins/licence-en.html
 // =====================================================================================================================
 
-(function($){
-    var pluginCount = 0;
+(function ($) {
+    var plugin_count = 0;
+
+    if (!String.prototype.trim) {
+        String.prototype.trim = function () {
+            return this.replace(/^\s+|\s+$/g, '');
+        };
+    }
+
     var methods = {
-        init: function(){
-            return this.each(function(){
+        init: function () {
+            return this.each(function () {
                 var $input = $(this),
                     $label,
                     $elem,
+                    $container,
+                    hidden,
 
                     disabled,
                     checked,
@@ -25,25 +34,27 @@
                     name,
                     html,
                     text,
-                    tempText,
+                    temp_text,
 
                     self = this;
 
 
 
                 //prevent overwrite
-                if($input.data("isActive")) {
+                if ($input.data("isActive")) {
                     return;
                 }
                 $input.data("isActive", true);
 
-                pluginCount++;
-                this.pluginCount = pluginCount;
+                plugin_count += 1;
+                this.plugin_count = plugin_count;
+
+                hidden = '<div class="icr__hidden" id="icr-container__' + this.plugin_count + '"></div>';
 
 
 
                 // private methods
-                var getInfo = function(){
+                var getInfo = function () {
                     type = $input.prop("type");
                     disabled = $input.prop("disabled");
                     checked = $input.prop("checked");
@@ -52,62 +63,67 @@
                     getText();
                 };
 
-                var getText = function(){
+                var getText = function () {
                     $label = $input.parent("label");
 
-                    if($label.length > 0) {
+                    if ($label.length > 0) {
+                        $label.after(hidden);
+                        $container = $("#icr-container__" + self.plugin_count);
+                        $input.appendTo($container);
+                        $label.appendTo($container);
+
                         text = $label.html();
-                        tempText = text.replace(/<input["-=a-zA-Z\u0400-\u04FF\s\d\[\]\_]+>{1}/,"");
-                        text = tempText.trim();
+                        temp_text = text.replace(/<input["-=a-zA-Z\u0400-\u04FF\s\d\[\]\_]+>{1}/,"");
+                        text = temp_text.trim();
                     } else {
                         id = $input.prop("id");
                         $label = $("label[for='"+id+"']");
-                        if($label.length > 0) {
-                            text = $label.html().trim();
+                        $label.after(hidden);
+                        $container = $("#icr-container__" + self.plugin_count);
+                        $input.appendTo($container);
+                        $label.appendTo($container);
+
+                        if ($label.length > 0) {
+                            text = $label.html();
+                            temp_text = text.toString();
+                            text = temp_text.trim();
                         } else {
                             throw new Error("Label not found!");
                         }
                     }
 
-                    hideOld();
-                };
-
-                var hideOld = function(){
-                    $input[0].style.display = "none";
-                    $label[0].style.display = "none";
-
                     placeNew();
                 };
 
-                var placeNew = function(){
-                    if(disabled) {
-                        if(checked) {
-                            html = '<span class="icr disabled checked" id="icr-'+self.pluginCount+'">';
+                var placeNew = function () {
+                    if (disabled) {
+                        if (checked) {
+                            html = '<span class="icr disabled checked" id="icr-' + self.plugin_count + '">';
                         } else {
-                            html = '<span class="icr disabled" id="icr-'+self.pluginCount+'">';
+                            html = '<span class="icr disabled" id="icr-' + self.plugin_count + '">';
                         }
                     } else {
-                        if(checked) {
-                            html = '<span class="icr enabled checked" id="icr-'+self.pluginCount+'">';
+                        if (checked) {
+                            html = '<span class="icr enabled checked" id="icr-'+self.plugin_count + '">';
                         } else {
-                            html = '<span class="icr enabled" id="icr-'+self.pluginCount+'">';
+                            html = '<span class="icr enabled" id="icr-' + self.plugin_count + '">';
                         }
                     }
 
-                    html += '<span class="icr__'+type+'"></span>';
-                    html += '<span class="icr__text">'+text+'</span>';
+                    html += '<span class="icr__' + type + '"></span>';
+                    html += '<span class="icr__text">' + text + '</span>';
                     html += '</span>';
 
-                    $label.after(html);
-                    $elem = $("#icr-" + self.pluginCount);
+                    $container.after(html);
+                    $elem = $("#icr-" + self.plugin_count);
 
                     bindEvents();
                 };
 
-                var bindEvents = function(){
-                    $elem.on("click", function(){
-                        if(!disabled) {
-                            if(checked && type !== 'radio') {
+                var bindEvents = function () {
+                    $elem.on("click", function () {
+                        if (!disabled) {
+                            if (checked && type !== 'radio') {
                                 checkOff();
                             } else {
                                 checkOn();
@@ -115,29 +131,31 @@
                         }
                     });
 
-                    $elem.on("mousedown", function(e){
+                    $elem.on("mousedown", function (e) {
                         e.preventDefault();
                         return false;
                     });
 
-                    $input.on("stateChanged", function(){
+                    $input.on("stateChanged", function () {
                         checkListen();
                     });
                 };
 
-                var checkOn = function(){
-                    $input.prop("checked", true).trigger("change");
+                var checkOn = function () {
+                    $input.prop("checked", "checked");
+                    $input.trigger("change");
                     $("input[name='"+name+"']").trigger("stateChanged");
                 };
 
-                var checkOff = function(){
-                    $input.prop("checked", false).trigger("change");
+                var checkOff = function () {
+                    $input.removeProp("checked");
+                    $input.trigger("change");
                     $("input[name='"+name+"']").trigger("stateChanged");
                 };
 
-                var checkListen = function(){
+                var checkListen = function () {
                     checked = $input.prop("checked");
-                    if(checked) {
+                    if (checked) {
                         $elem.addClass("checked");
                     } else {
                         $elem.removeClass("checked");
@@ -152,7 +170,7 @@
         }
     };
 
-    $.fn.ionCheckRadio = function(method){
+    $.fn.ionCheckRadio = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if (typeof method === 'object' || !method) {

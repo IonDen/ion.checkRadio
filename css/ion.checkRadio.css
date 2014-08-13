@@ -1,5 +1,5 @@
 /* Ion.CheckRadio
-// Version 1.0.0
+// Version 1.1.1
 // by Denis Ineshin | ionden.com
 // ===================================================================================================================*/
 
@@ -15,10 +15,19 @@
     cursor: default;
     opacity: 0.5;
 }
-    .icr__text {
-        position: relative; display: block;
-    }
-    .icr__radio, .icr__checkbox {
-        position: absolute; display: block;
-        top: 0; left: 0;
-    }
+.icr__text {
+    position: relative; display: block;
+}
+.icr__radio, .icr__checkbox {
+    position: absolute; display: block;
+    top: 0; left: 0;
+}
+.icr__hidden {
+    position: relative;
+    display: block;
+    float: left;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0; line-height: 0;
+}

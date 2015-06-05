@@ -1,10 +1,12 @@
-# Ion.CheckRadio 1.1.0
+# Ion.CheckRadio 2.0.0
+
+[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
 
 > <a href="readme.md">English description</a> | Описание на русском
 
-jQuery плагин для стилизации чекбоксов и радио-батонов. С поддержкой скинов <a href="http://ionden.com/a/plugins/ion.checkRadio/index.html">Сайт проекта и демо</a>
-
-Download: <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-1.1.0.zip">ion.checkRadio-1.1.0.zip</a>
+jQuery плагин для стилизации чекбоксов и радио-батонов. С поддержкой скинов
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/index.html">Сайт проекта и демо</a>
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Download Ion.checkRadio-2.0.0.zip</a>
 
 ***
 
@@ -34,8 +36,39 @@ CSS:
 * icr-skinName-skin.png - спрайт скина
 * Либо воспользуйтесь вложенным в архив PSD файлом, и нарисуйте собственный скин
 
-Создаем чекбоксы и/или радио-батоны:
+### Рекомендуемая разметка
 ```html
+Радио-батоны:
+
+<label class="icr-label">
+    <span class="icr-item type_radio"></span>
+    <span class="icr-hidden"><input class="icr-input" type="radio" name="!group_name!" value="!radio_value_1!" /></span>
+    <span class="icr-text">!radio_text_1!</span>
+</label>
+<label class="icr-label">
+    <span class="icr-item type_radio"></span>
+    <span class="icr-hidden"><input class="icr-input" type="radio" name="!group_name!" value="!radio_value_2!" /></span>
+    <span class="icr-text">!radio_text_2!</span>
+</label>
+
+Чекбоксы:
+<label class="icr-label">
+    <span class="icr-item type_checkbox"></span>
+    <span class="icr-hidden"><input class="icr-input" type="radio" name="!group_name!" value="!checkbox_value_1!" /></span>
+    <span class="icr-text">!checkbox_text_1!</span>
+</label>
+<label class="icr-label">
+    <span class="icr-item type_checkbox"></span>
+    <span class="icr-hidden"><input class="icr-input" type="radio" name="!group_name!" value="!checkbox_value_2!" /></span>
+    <span class="icr-text">!checkbox_text_1!</span>
+</label>
+```
+
+
+### Обычная разметка
+```html
+Создаем чекбоксы и/или радио-батоны:
+
 <input type="radio" name="reading" value="0" id="reading_0" /> <label for="reading_0">Очень люблю</label>
 <input type="radio" name="reading" value="1" id="reading_1" /> <label for="reading_1">Иногда читаю</label>
 <input type="radio" name="reading" value="2" id="reading_2" /> <label for="reading_2">Лучше фильм посмотрю</label>
@@ -59,16 +92,19 @@ CSS:
 <label><input type="checkbox" name="think" value="6" disabled checked /> О сексе</label>
 ```
 
-Инициализируем плагин:
+### Инициализируем плагин
 ```javascript
+// все на странице:
 $("input[type='radio'], input[type='checkbox']").ionCheckRadio();
+
+// конкретную группу:
+$(".my_inputs").ionCheckRadio();
 ```
 
 Profit!
 
 
-## История обновлений
-* 30.04.2014 - Множество мелких исправлений, в том числе: #1, #5, #7
-* 05.08.2013 - исправлен мелкий баг с событием onChange
-* 31.07.2013 - исправлен мелкий недочет
-* 21.07.2013 - релиз
+## <a href="history.md">История обновлений</a>
+
+## Поддержите разработку плагина
+[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)

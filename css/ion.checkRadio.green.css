@@ -1,51 +1,37 @@
 /* Ion.CheckRadio, Green Skin
-// Version 1.0.0
-// by Denis Ineshin | ionden.com
+// Version 2.0.0
+//
+// © Denis Ineshin, 2015
+// https://github.com/IonDen
 // ===================================================================================================================*/
 
-/* =====================================================================================================================
-// Skin details */
+.icr-label {
+    padding-right: 2px;
+    margin: 0 5px 5px 0;
+    font-size: 14px; line-height: 18px;
+}
 
-.icr__radio, .icr__checkbox {
+.icr-item {
+    width: 23px; height: 23px;
     background: url(../img/icr-green-skin.png) no-repeat;
 }
 
-.icr {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; line-height: 19px;
-    margin: 0 25px 10px 0;
-    color: #555;
+.icr-label.focused .icr-item:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px; left: -2px;
+    border: 1px dotted rgba(0, 0, 0, 0.3);
 }
-    .icr__text {
-        padding: 2px 0 0 28px;
-    }
-
-
-    .icr__checkbox {
-        width: 23px; height: 23px;
-        background-position: 0 0;
-    }
-    .icr.enabled:hover .icr__checkbox {
-        background-position: -50px 0;
-    }
-    .icr.checked .icr__checkbox {
-        background-position: -100px 0;
-    }
-    .icr.enabled.checked:hover .icr__checkbox {
-        background-position: -150px 0;
-    }
-
-
-    .icr__radio {
-        width: 23px; height: 23px;
-        background-position: 1px -49px;
-    }
-    .icr.enabled:hover .icr__radio {
-        background-position: -49px -49px;
-    }
-    .icr.checked .icr__radio {
-        background-position: -99px -49px;;
-    }
-    .icr.enabled.checked:hover .icr__radio {
-        background-position: -149px -49px;;
-    }
+.icr-label.focused .type_checkbox:after {
+    width: 25px; height: 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.icr-label.focused .type_radio:after {
+    width: 22px; height: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+}

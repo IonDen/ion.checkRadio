@@ -17,6 +17,8 @@ jQuery plugin for styling checkboxes and radio-buttons. With skin support.
 * Ion.CheckRadio supports touch-devices (iPhone, iPad, etc.).
 * Ion.CheckRadio freely distributed under terms of <a href="http://ionden.com/a/plugins/licence-en.html" target="_blank">MIT licence</a>.
 
+## <a href="http://ionden.com/a/plugins/ion.checkRadio/demo.html">Demo Page</a>
+
 ## Dependencies
 * <a href="http://jquery.com/" target="_blank">jQuery 1.9+</a>
 

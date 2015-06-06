@@ -18,6 +18,8 @@ jQuery плагин для стилизации чекбоксов и радио
 * <a href="https://github.com/IonDen/ion.checkRadio">Репозиторий на GitHub</a>.
 * Плагин свободно распространяется на условиях <a href="http://ionden.com/a/plugins/licence.html" target="_blank">лицензии MIT</a>.
 
+## <a href="http://ionden.com/a/plugins/ion.checkRadio/demo.html">Демо страница</a>
+
 ## Зависимости
 * <a href="http://jquery.com/" target="_blank">jQuery 1.9+</a>
 

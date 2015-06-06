@@ -36,6 +36,17 @@ CSS:
 * icr-skinName-skin.png - спрайт скина
 * Либо воспользуйтесь вложенным в архив PSD файлом, и нарисуйте собственный скин
 
+
+## Устанавливаем с помощью bower
+* bower install ion-checkradio
+
+## Устнавливаем с помощью npm
+* npm install ion-checkradio
+
+## Устанавливаем с помощью spm [![](http://spmjs.io/badge/ion-checkradio)](http://spmjs.io/package/ion-checkradio)
+* spm install ion-checkradio
+
+
 ### Рекомендуемая разметка
 ```html
 Радио-батоны:

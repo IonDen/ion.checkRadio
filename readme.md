@@ -35,6 +35,15 @@ Don't forget about skin image:
 * icr-skinName-skin.png - skin sprite
 * Or use included PSD file and draw your own skin
 
+## Install with bower
+* bower install ion-checkradio
+
+## Install with npm
+* npm install ion-checkradio
+
+## Install with spm [![](http://spmjs.io/badge/ion-checkradio)](http://spmjs.io/package/ion-checkradio)
+* spm install ion-checkradio
+
 ### Recommended HTML
 ```html
 Radio-buttons:

@@ -1,14 +1,16 @@
-# Ion.CheckRadio 2.0.0
-
-[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
+![ion.checkRadio](_tmp/logo-ion-check-radio.png)
 
 > English description | <a href="readme.ru.md">Описание на русском</a>
 
-jQuery plugin for styling checkboxes and radio-buttons. With skin support.
-* <a href="http://ionden.com/a/plugins/ion.checkRadio/en.html">Project page and demos</a>
-* <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Download Ion.checkRadio-2.0.0.zip</a>
+jQuery-plugin for styling checkboxes and radio-buttons. With skin support.
 
 ***
+
+* Version: 2.0.0
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/en.html">Project page and demos</a>
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Download ZIP</a>
+
+[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
 
 ## Description
 * Ion.CheckRadio — nice and easy jQuery-plugin for checkbox and radio-buttons customization.
@@ -114,7 +116,10 @@ $(".my_inputs").ionCheckRadio();
 Success!
 
 
-## <a href="history.md">Update history</a>
+### <a href="history.md">Update history</a>
 
-## Support plugin development
+***
+
+Support the plugin:
+
 [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)

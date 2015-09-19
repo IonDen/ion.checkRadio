@@ -1,14 +1,16 @@
-# Ion.CheckRadio 2.0.0
-
-[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
+![ion.checkRadio](_tmp/logo-ion-check-radio.png)
 
 > <a href="readme.md">English description</a> | Описание на русском
 
-jQuery плагин для стилизации чекбоксов и радио-батонов. С поддержкой скинов
-* <a href="http://ionden.com/a/plugins/ion.checkRadio/index.html">Сайт проекта и демо</a>
-* <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Download Ion.checkRadio-2.0.0.zip</a>
+jQuery-плагин для стилизации чекбоксов и радио-батонов. С поддержкой скинов
 
 ***
+
+* Версия: 2.0.0
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/index.html">Сайт проекта и демо</a>
+* <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Скачать ZIP-архив</a>
+
+[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
 
 ## Описание
 * Ion.CheckRadio — простой и понятный плагин для стилизации чекбоксов и радио-батонов.
@@ -117,7 +119,10 @@ $(".my_inputs").ionCheckRadio();
 Profit!
 
 
-## <a href="history.md">История обновлений</a>
+### <a href="history.md">История обновлений</a>s
 
-## Поддержите разработку плагина
+***
+
+Поддержите плагин:
+
 [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)

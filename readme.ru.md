@@ -119,7 +119,7 @@ $(".my_inputs").ionCheckRadio();
 Profit!
 
 
-### <a href="history.md">История обновлений</a>s
+### <a href="history.md">История обновлений</a>
 
 ***
 

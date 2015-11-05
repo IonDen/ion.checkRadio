@@ -10,8 +10,6 @@ jQuery-plugin for styling checkboxes and radio-buttons. With skin support.
 * <a href="http://ionden.com/a/plugins/ion.checkRadio/en.html">Project page and demos</a>
 * <a href="http://ionden.com/a/plugins/ion.checkRadio/ion.checkRadio-2.0.0.zip">Download ZIP</a>
 
-[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
-
 ## Description
 * Ion.CheckRadio — nice and easy jQuery-plugin for checkbox and radio-buttons customization.
 * With skin support
@@ -120,6 +118,10 @@ Success!
 
 ***
 
-Support the plugin:
+#### Support Ion-series plugins development:
 
-[![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
+* Donate through Pledgie service: [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
+
+* Donate direct to my Paypal account: https://www.paypal.me/IonDen
+
+* Donate direct to my Yandex.Money account: http://yasobe.ru/na/razrabotku
